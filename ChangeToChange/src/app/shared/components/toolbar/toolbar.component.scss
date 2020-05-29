@@ -1,0 +1,23 @@
+a{
+    color: black;
+    text-decoration: none;   
+}
+.search-bar { background-color: #222; }
+.search-bar * { color: white !important; }
+.search-bar input { border-bottom-color: white }
+.md-errors-spacer { display:none; }
+
+
+
+mat-toolbar{
+    background-color: white;
+    border-bottom: solid 1px white ;
+}
+a.appN[ng-reflect-router-link] {
+    color: #1481BA;
+    font-size: 35px;
+
+    font-weight: 600;
+  }
+
+

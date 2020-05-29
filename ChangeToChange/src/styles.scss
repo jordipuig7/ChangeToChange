@@ -1,0 +1,81 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background: white; }
+
+.fill-remaining-space{
+    flex: 1 1 auto;
+}
+.active{
+    border: 1px solid #f5f5f5;
+}
+.container-spinner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+}
+
+/*
+.Motos{
+    background: blue !important;
+}
+.Coches{
+    background:  orangered !important;
+}
+.Motos{
+   background: rgb(173, 32, 169) !important;
+}
+.Immobiliaria{
+    background: brown !important;
+}
+.TV_Audio_Foto{
+    background: rgb(233, 156, 14) !important;
+}
+.Móviles_Telefonía{
+    background: red !important;
+}
+.Deporte_Ocio{
+    background: yellowgreen !important;
+}
+.Bicicletas{
+    background: rgb(76, 158, 235) !important;
+}
+.Consolas_Juagos{
+    background: rgb(29, 228, 235) !important;
+}
+.Hogar_Jardín{
+    background: green !important;
+}
+.Electrodomésticos{
+    background: grey !important;
+}
+.Libros{
+    background: rgb(87, 18, 84) !important;
+}
+.Empleo{
+    background: #fd2e !important;
+}
+.Servicios{
+    background: rgb(53, 197, 24) !important;
+}
+*/
+
+
+mat-chip.mat-chip.mat-primary.mat-standard-chip{
+    min-height: 1rem;
+    padding: 9px;
+}
+/*
+$alt-primary: mat-palette(#303F9F);
+
+$alt-accent: mat-palette(#03A9F4);
+
+$alt-theme: mat-dark-theme(#212121);
+
+.alternative {
+    @include mat-button-theme($alt-theme);
+}
+*/
+

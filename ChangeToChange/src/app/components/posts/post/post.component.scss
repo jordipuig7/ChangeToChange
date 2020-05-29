@@ -1,0 +1,50 @@
+.mat-card{
+    background: white;
+    color: #000;
+    width: 80%;
+    margin: 1% auto;
+    padding: 2%;
+
+    .mat-card-title{
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin-top: 2rem;
+    }
+
+    .mat-card-content{
+        width: 60%;
+        text-align: center;
+        margin: 10px auto 0;
+
+        p.content{
+            text-align:  initial;
+        }
+        
+    }
+
+    img{
+        display: block;
+        max-width: 100%;
+        width: auto;
+        height: 200px;
+        margin-top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 6px;
+    }
+    .mat-card-subtitle{
+        font-size: 1rem;
+        float: left;
+    }
+
+
+}
+.align-center{
+    text-align: center;
+    clear: both;
+    display: block;
+    margin: 6px auto;
+}
+
+
+

@@ -1,0 +1,33 @@
+<mat-toolbar>
+    <br>
+    <a class="appN" routerLink="/">{{appName}} </a>
+    <span class="fill-remaining-space"></span>
+    <span class="fill-remaining-space"></span>
+    <span class="fill-remaining-space"></span>
+    <span class="fill-remaining-space"></span>
+
+    <mat-search-bar class="searchBarI" (onEnter)="searchBarOnEnter($event)" (onClose)="closeSearchBar()"></mat-search-bar>
+    <span class="fill-remaining-space"></span>
+
+
+    <button style="color:#1d3354" mat-stroked-button (click)="onNewPost()" routerLinkActive="active" *ngIf="authSvc.userData$ | async">
+        <mat-icon>note_add</mat-icon>&nbsp; New Post
+    </button>
+
+    <a routerLink="/admin/posts" routerLinkActive="active" *ngIf="authSvc.userData$ | async">
+        <button mat-button>MyChanges</button>
+    </a>
+    <a routerLink="/about" routerLinkActive="active">
+        <button mat-button>About</button>
+    </a>
+
+    <a *ngIf="authSvc.userData$ | async; else showLogin" (click)="onLogOut()">
+        <button mat-button>Logout</button>
+    </a>
+
+    <ng-template #showLogin>
+        <a routerLink="/login" routerLinkActive="active">
+            <button mat-button>Login</button>
+        </a>
+    </ng-template>
+</mat-toolbar>

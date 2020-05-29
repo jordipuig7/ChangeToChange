@@ -1,0 +1,52 @@
+table {
+    width: 100%;
+  }
+  
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.mat-form-field{
+  font-size: 1rem;
+  width: 98%;
+  margin: 0 auto;
+  display: block;
+  margin-top: 1rem;
+}
+
+img{
+ width: 300px;
+ height: 200px;
+}
+
+.mat-column-titlePost{
+  width: 150px;
+  font-weight: bold;  
+}
+.mat-column-contentPost{
+  width: 450px;
+}
+.mat-column-changeTo{
+  width: 150px;
+}
+#tags{
+  width: 50px;
+  
+}
+
+.container-btn-new{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 1rem -0.6rem;
+  button{
+    width: 25%;
+    color: #fff;
+    background: #1481ba ;
+    cursor: pointer;
+  }
+
+}
+
+

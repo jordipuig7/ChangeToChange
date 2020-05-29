@@ -1,0 +1,58 @@
+<div class="new-post-container">
+    <form [formGroup]="newPostForm" (ngSubmit)="addNewPost(newPostForm.value)">
+        <mat-form-field>
+            <mat-label>Title</mat-label>
+            <input matInput placeholder="Title post" formControlName="titlePost">            
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Content</mat-label>
+            <input matInput placeholder="Content post" formControlName="contentPost">
+        </mat-form-field>
+
+        <!--prova-->
+        <mat-form-field>
+            <mat-label>ChangeTo</mat-label>
+            <input matInput placeholder="Change To" formControlName="changeTo">
+        </mat-form-field>
+
+        <!--<mat-form-field>
+            <mat-label>Toppings</mat-label>
+            <mat-select [formControl]="toppings" multiple>
+              <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+            </mat-select>
+          </mat-form-field>-->
+
+        <mat-form-field>
+            <mat-select placeholder="Tags" multiple formControlName="tagsPost">
+                <mat-option value="Coches">Coches</mat-option>
+                <mat-option value="Motos y Accesorios">Motos y Accesorios</mat-option>
+                <mat-option value="Moda">Moda y Accesorios</mat-option>
+                <mat-option value="Immobiliaria">Immobiliaria</mat-option>
+                <mat-option value="TV, Audio y Foto">TV, Audio y Foto</mat-option>
+                <mat-option value="Móviles y Telefonía">Móviles y Telefonía</mat-option>
+                <mat-option value="Deporte y Ocio">Deporte y Ocio</mat-option>
+                <mat-option value="Bicicletas">Bicicletas</mat-option>
+                <mat-option value="Consolas y Juegos">Consolas y Juegos</mat-option>
+                <mat-option value="Hogar yJardín">Hogar y Jardín</mat-option>
+                <mat-option value="Electrodomésticos">Electrodomésticos</mat-option>
+                <mat-option value="Libros">Libros</mat-option>
+                <mat-option value="Empleo">Empleo</mat-option>
+                <mat-option value="Servicios">Servicios</mat-option>
+
+                <!--afegir mes valors per tags i millorar estils--> 
+            </mat-select>
+        </mat-form-field>
+
+        <div class="container-input-file">
+            <label class="custom-file">
+                <input type="file" formControlName="imagePost" (change)="handelImage($event)" multiple> 
+                <mat-icon>add_photo_alternate</mat-icon><span>CHOOSE IMAGE</span>
+            </label>
+        </div>
+        <div class="container-button">
+            <input type="submit" class="mat-flat-button" value="Save" [mat-dialog-close]="true">
+        </div>
+
+    </form>
+</div>

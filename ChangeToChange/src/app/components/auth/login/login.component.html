@@ -1,0 +1,29 @@
+<mat-card>
+    <mat-card-title>
+        Login
+    </mat-card-title>
+    <mat-card-content>
+        <form [formGroup]="loginForm"(ngSubmit)="onLogin(loginForm.value)">
+            <p>
+                <mat-form-field>
+                    <input type="email" matInput placeholder="Email" formControlName="email">
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field>
+                    <input type="password" matInput placeholder="Password"formControlName="password" required>
+                </mat-form-field>
+            </p>
+            <button type="submit" (click)="tryRegister(loginForm.value)" mat-raised-button color="primary">Login</button>
+            <br>
+            <label class="error">{{errorMessage}}</label>
+            <label class="success">{{successMessage}}</label>
+            <br>
+            <br>
+        </form>
+    </mat-card-content>
+
+    <div>
+        <button class="btn btn-lg btn-google" (click)="onClickGoogleLogin()"><i class="fa fa-google-plus" aria-hidden="true"></i>Google</button>
+    </div>
+</mat-card>
